@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/favicon.jpg" />
+        <link rel="apple-touch-icon" href="images/favicon (1).jpg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Stick&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="dist/main.css" />
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <!-- LOADER ANIMATION -->
+        <div
+            class="loader w-[100%] h-[100vh] flex justify-center items-center absolute z-[500]"
+        >
+            <svg class="svgloader">
+                <text
+                    x="50%"
+                    y="50%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                >
+                    GERALDINE ELONO
+                </text>
+            </svg>
+        </div>
+        <!-- MENU NAVIGATION -->
+
+        <nav class="menu">
+            <div class="container__menu">
+                <div class="toggle"></div>
+            </div>
+            <span class="link--hide menu__link"
+                ><a href="#home" class="activelink">Home </a></span
+            ><span class="link--hide menu__link"
+                ><a href="#apropos">A propos </a></span
+            ><span class="link--hide menu__link"
+                ><a href="#projets">Projets</a></span
+            ><span class="link--hide menu__link"
+                ><a href="#contact">Contact</a></span
+            >
+        </nav>
+        <main>
+            <!-- HERO SECTION -->
+            <section
+                class="hero flex flex-col items-center justify-center h-[100vh] bg-cover bg-no-repeat relative pt-2 sm:pt-0"
+                id="home"
+            >
+                <img
+                    src="images/afri10.jpg"
+                    class="absolute w-[3%] h-[100%] top-0 left-0 object-cover"
+                    alt=""
+                />
+                <div class="hero__text">
+                    <p class="hero__title">Hello, je suis Elono Géraldine</p>
+                    <p class="hero__paragraph flex items-center justify-center">
+                        <span
+                            class="w-[6%] h-[0.2rem] bg-titlecolor inline-block"
+                        ></span>
+                        <span>Journaliste & Reporter d'images</span>
+                        <span
+                            class="w-[6%] h-[0.2rem] bg-titlecolor inline-block items-center"
+                        ></span>
+                    </p>
+                </div>
+                <img
+                    src="images/afri10.jpg"
+                    class="absolute w-[3%] h-[100%] top-0 right-0 object-cover"
+                    alt=""
+                />
+                <div class="hero__sociallink mt-5 flex gap-2">
+                    <a href="#">
+                        <ion-icon
+                            name="logo-behance"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon
+                            name="logo-linkedin"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon
+                            name="logo-facebook"
+                            class="hover:text-firstcolor"
+                        ></ion-icon>
+                    </a>
+                    <a href="#">
+                        <ion-icon
+                            name="logo-twitter"
+                            class="hover:text-firstcolor"
+                        ></ion-icon
+                    ></a>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section class="about container mb-6 hidden" id="apropos">
+                <h2 class="title">A propos de moi</h2>
+                <div class="about__presentation flex flex-col">
+                    <div class="about__firstpart mt-10">
+                        <img
+                            src="images/aboutimg.jpg"
+                            alt="ma photo"
+                            class="rounded w-[100%] md:float-left md:w-[250px] md:h-[250px] object-cover mr-5"
+                        />
+                        <div class="about__text">
+                            <h1
+                                class="text-2xl sm:text-3xl text-titlecolor pb-3 pt-2 md:pt-0"
+                            >
+                                Je suis ELONO Geraldine
+                            </h1>
+                            <p class="text-textcolor leading-relaxed paragraph">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Provident facilis dolores ab
+                                atque, illum fugit ducimus optio! Veniam dolores
+                                vel repellat harum magnam. Corporis iusto, alias
+                                ex officia cupiditate voluptates. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit.
+                                Voluptatibus ab molestiae consequatur quia quo
+                                repudiandae at maiores mollitia dignissimos rem
+                                nisi, ea pariatur perspiciatis rerum tempora
+                                fuga placeat. In, accusamus? Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit. Provident
+                                facilis dolores ab atque, illum fugit ducimus
+                                optio! Veniam dolores vel repellat harum magnam.
+                                Corporis iusto, alias ex officia cupiditate
+                                voluptates. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Voluptatibus ab
+                                molestiae consequatur quia quo repudiandae at
+                                maiores mollitia dignissimos rem nisi, ea
+                                pariatur perspiciatis rerum tempora fuga
+                                placeat. In, accusamus? Lorem ipsum dolor sit
+                                amet consectetur adipisicing elit. Provident
+                                facilis dolores ab atque, illum fugit ducimus
+                                optio! Veniam dolores vel
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about__secondpart mt-5">
+                        <p class="text-textcolor leading-relaxed paragraph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ut quidem reprehenderit dolorum sequi! Illum
+                            labore quibusdam quam reiciendis? Sed at alias
+                            aliquam sapiente omnis maxime odit, officiis a
+                            deserunt tempora? Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Saepe vero eveniet
+                            perferendis eum tempore doloremque debitis
+                            voluptatem voluptates et, labore ipsum, quibusdam
+                            modi, necessitatibus error optio ipsa ut ea
+                            perspiciatis.
+                        </p>
+                    </div>
+
+                    <a href="#" class="button relative mt-5 self-start">
+                        <span class="text-textcolor text-xl">Mon CV</span>
+                        <span class="text-textcolor text-2xl arrow"
+                            >&rarr;</span
+                        >
+                    </a>
+                </div>
+
+                <!-- LINE FOR SEPERATION -->
+                <img
+                    src="images/border.png"
+                    class="w-[80%] sm:w-[50%] mx-auto my-0 brightness-50"
+                    alt="bordure de séparation"
+                />
+
+                <!-- EXPERIENCE SECTION -->
+                <div class="experience mt-6 mb-4">
+                    <div class="experience__container py-4">
+                        <h2 class="text-textcolor text-2xl font-semibold">
+                            .Expériences
+                        </h2>
+                        <div
+                            class="experience__content grid grid-cols-1 md:grid-cols-2 pt-10 gap-5"
+                        >
+                            <div class="experience__left flex flex-col gap-5">
+                                <div
+                                    class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0"
+                                >
+                                    <p
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
+                                    >
+                                        2022 - A présent
+                                    </p>
+                                    <h3
+                                        class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0 mt-14"
+                                    >
+                                        AWESOME STUDIO
+                                    </h3>
+                                    <p
+                                        class="experience__post text-titlecolor font-light pl-2"
+                                    >
+                                        Lead Designer
+                                    </p>
+                                    <p
+                                        class="experience__description text-textcolor font-normal pl-2 pt-2 paragraph"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Molestias, repellendus
+                                        nobis. Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.
+                                    </p>
+                                </div>
+                                <div
+                                    class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0"
+                                >
+                                    <p
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
+                                    >
+                                        2022 - A présent
+                                    </p>
+                                    <h3
+                                        class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0 mt-14"
+                                    >
+                                        AWESOME STUDIO
+                                    </h3>
+                                    <p
+                                        class="experience__post text-titlecolor font-light pl-2"
+                                    >
+                                        Lead Designer
+                                    </p>
+                                    <p
+                                        class="experience__description text-textcolor font-normal pl-2 pt-2 paragraph"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Molestias, repellendus
+                                        nobis. Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.
+                                    </p>
+                                </div>
+                                <div
+                                    class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0"
+                                >
+                                    <p
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
+                                    >
+                                        2022 - A présent
+                                    </p>
+                                    <h3
+                                        class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0 mt-14"
+                                    >
+                                        AWESOME STUDIO
+                                    </h3>
+                                    <p
+                                        class="experience__post text-titlecolor font-light pl-2"
+                                    >
+                                        Lead Designer
+                                    </p>
+                                    <p
+                                        class="experience__description text-textcolor font-normal pl-2 pt-2 paragraph"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Molestias, repellendus
+                                        nobis. Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="experience__left relative flex flex-col gap-5"
+                            >
+                                <div
+                                    class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0"
+                                >
+                                    <p
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
+                                    >
+                                        2022 - A présent
+                                    </p>
+                                    <h3
+                                        class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0 mt-14"
+                                    >
+                                        AWESOME STUDIO
+                                    </h3>
+                                    <p
+                                        class="experience__post text-titlecolor font-light pl-2"
+                                    >
+                                        Lead Designer
+                                    </p>
+                                    <p
+                                        class="experience__description text-textcolor font-normal pl-2 pt-2 paragraph"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Molestias, repellendus
+                                        nobis. Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.
+                                    </p>
+                                </div>
+                                <div
+                                    class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0"
+                                >
+                                    <p
+                                        class="experience__year border-2 z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
+                                    >
+                                        2022 - A présent
+                                    </p>
+                                    <h3
+                                        class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0 mt-14"
+                                    >
+                                        AWESOME STUDIO
+                                    </h3>
+                                    <p
+                                        class="experience__post text-titlecolor font-light pl-2"
+                                    >
+                                        Lead Designer
+                                    </p>
+                                    <p
+                                        class="experience__description text-textcolor font-normal pl-2 pt-2 paragraph"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Molestias, repellendus
+                                        nobis. Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.
+                                    </p>
+                                </div>
+                                <div
+                                    class="experience__item relative mb-4 pl-6 after:absolute after:h-[100%] after:w-[0.01rem] after:left-0 after:top-0"
+                                >
+                                    <p
+                                        class="experience__year border-2 border-[rgba(57, 111, 180, 0.5)] z-10 rounded-full text-center px-3 py-1 font-bold text-titlecolor bg-white absolute left-[-4%] sm:left-[-6%] top-[5%]"
+                                    >
+                                        2022 - A présent
+                                    </p>
+                                    <h3
+                                        class="experience__enterprise text-titlecolor font-semibold text-xl p-2 pb-0 mt-14"
+                                    >
+                                        AWESOME STUDIO
+                                    </h3>
+                                    <p
+                                        class="experience__post text-titlecolor font-light pl-2"
+                                    >
+                                        Lead Designer
+                                    </p>
+                                    <p
+                                        class="experience__description text-textcolor font-normal pl-2 pt-2 paragraph"
+                                    >
+                                        Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Molestias, repellendus
+                                        nobis. Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.Assumenda nam distinctio
+                                        provident obcaecati harum laudantium
+                                        quae non amet officiis cupiditate ex
+                                        modi, consequuntur a unde, dolorum
+                                        facere.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LINE FOR SEPERATION -->
+                <img
+                    src="images/border.png"
+                    class="w-[80%] sm:w-[50%] mx-auto my-0 brightness-50"
+                    alt="bordure de séparation"
+                />
+
+                <!-- SKILL SECTION -->
+                <div class="skill mt-6">
+                    <h2 class="text-textcolor text-2xl font-semibold">
+                        .Compétences
+                    </h2>
+                    <div
+                        class="sill__container flex gap-6 lg:gap-20 items-center justify-center pt-10"
+                    >
+                        <div class="skill__item w-[15%] sm:w-[10%] lg:w-[6%]">
+                            <img
+                                src="images/icons8-adobe-audition.svg"
+                                alt="logo de adobe-audition"
+                                class="w-full p-[0.2rem] sm:p-[0.5rem] lg:p-[0.7rem]"
+                            />
+                        </div>
+
+                        <div class="skill__item w-[15%] sm:w-[10%] lg:w-[6%]">
+                            <img
+                                src="images/icons8-adobe-photoshop.svg"
+                                alt="logo de adobe-photoshop"
+                                class="w-full p-[0.2rem] sm:p-[0.5rem] lg:p-[0.7rem]"
+                            />
+                        </div>
+                        <div class="skill__item w-[15%] sm:w-[10%] lg:w-[6%]">
+                            <img
+                                src="images/icons8-adobe-lightroom.svg"
+                                alt="logo de adobe-lightroom"
+                                class="w-full p-[0.2rem] sm:p-[0.5rem] lg:p-[0.7rem]"
+                            />
+                        </div>
+                        <div class="skill__item w-[15%] sm:w-[10%] lg:w-[6%]">
+                            <img
+                                src="images/icons8-adobe-premiere-pro.svg"
+                                alt="logo de adobe-premiere-pro"
+                                class="w-full p-[0.2rem] sm:p-[0.5rem] lg:p-[0.7rem]"
+                            />
+                        </div>
+                        <div class="skill__item w-[15%] sm:w-[10%] lg:w-[6%]">
+                            <img
+                                src="images/icons8-filmora.svg"
+                                alt="logo de filmora"
+                                class="w-full p-[0.2rem] sm:p-[0.5rem] lg:p-[0.7rem]"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECT SECTION-->
+            <section
+                class="project container mt-10 text-center hidden"
+                id="projets"
+            >
+                <h2 class="title">Projets</h2>
+                <div class="project__container mt-5 grid">
+                    <div
+                        class="project__navigation flex gap-2 text-[0.9rem] sm:text-normal sm:flex-row justify-center sm:gap-10 text-titlecolor font-semibold mb-4"
+                        role="tablist"
+                        aria-label="tabs component"
+                    >
+                        <button
+                            class="tab tab--active"
+                            role="tab"
+                            aria-controls="panel-1"
+                            id="tab-1"
+                            type="button"
+                            aria-selected="true"
+                            tabindex="0"
+                        >
+                            Journalisme
+                        </button>
+                        <button
+                            class="tab"
+                            role="tab"
+                            aria-controls="panel-2"
+                            id="tab-2"
+                            type="button"
+                            aria-selected="false"
+                            tabindex="-1"
+                        >
+                            Audiovisuel
+                        </button>
+                        <button
+                            class="tab"
+                            role="tab"
+                            aria-controls="panel-3"
+                            id="tab-3"
+                            type="button"
+                            aria-selected="false"
+                            tabindex="-1"
+                        >
+                            Photographie
+                        </button>
+                    </div>
+                    <div
+                        class="project__content project__content--active grid grid-cols-3 gap-5"
+                        id="panel-1"
+                        role="tabpanel"
+                        tabindex="0"
+                        aria-labelledby="tab-1"
+                    >
+                        <img src="images/gall1.jpg" alt="" />
+                        <img src="images/gall2.jpg" alt="" />
+                        <img src="images/gall13.jpg" alt="" />
+                    </div>
+                    <div
+                        class="project__content grid grid-cols-3 gap-5"
+                        id="panel-2"
+                        role="tabpanel"
+                        tabindex="0"
+                        aria-labelledby="tab-2"
+                    >
+                        <img src="images/gall5.jpg" alt="" />
+                        <img src="images/gall6.jpg" alt="" />
+                        <img src="images/gall7.jpg" alt="" />
+                    </div>
+
+                    <div
+                        class="project__content grid grid-cols-3 gap-5"
+                        id="panel-3"
+                        role="tabpanel"
+                        tabindex="0"
+                        aria-labelledby="tab-3"
+                    >
+                        <img src="images/gall11.jpg" alt="" />
+                        <img src="images/gall12.jpg" alt="" />
+                        <img src="images/gall13.jpg" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION-->
+            <section
+                class="contact container pb-4 h-[100vh] flex flex-col justify-center relative hidden"
+                id="contact"
+            >
+                <img
+                    src="images/afri10.jpg"
+                    class="absolute w-[3%] h-[100%] top-0 left-0 object-cover"
+                    alt=""
+                />
+                <h2 class="title">Me Contacter</h2>
+                <div
+                    class="contact__container flex flex-col items-start gap-5 mt-6 md:gap-0 md:flex-row md:justify-around md:items-center"
+                >
+                    <div
+                        class="contact__item flex md:flex-col gap-1 items-center"
+                    >
+                        <ion-icon
+                            name="location-outline"
+                            class="self-center"
+                        ></ion-icon>
+                        <p class="text-textcolor text-sm font-bold">ADRESSE</p>
+                        <p class="text-textcolor text-sm">Douala, Cameroun</p>
+                    </div>
+                    <div
+                        class="contact__item flex md:flex-col gap-1 items-center"
+                    >
+                        <ion-icon
+                            name="phone-portrait-outline"
+                            class="self-center"
+                        ></ion-icon>
+                        <p class="text-textcolor text-sm font-bold">
+                            TELEPHONE
+                        </p>
+                        <a href="#" class="text-textcolor text-sm"
+                            >(+237)695 65 46 88</a
+                        >
+                    </div>
+                    <div
+                        class="contact__item flex md:flex-col gap-1 items-center"
+                    >
+                        <ion-icon
+                            name="mail-outline"
+                            class="self-center"
+                        ></ion-icon>
+                        <p class="text-textcolor text-sm font-bold">MAIL</p>
+                        <a href="#" class="text-textcolor text-sm"
+                            >danielapanewe@gmail.com</a
+                        >
+                    </div>
+                </div>
+
+                <img
+                    src="images/afri10.jpg"
+                    class="absolute w-[3%] h-[100%] top-0 right-0 object-cover"
+                    alt=""
+                />
+            </section>
+        </main>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <script src="script.js"></script>
+    </body>
+</html>
